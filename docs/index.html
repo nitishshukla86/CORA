@@ -270,7 +270,7 @@ footer{padding-block:56px 40px;text-align:center;color:var(--ink-faint);font-siz
 
     <div class="teaser figure">
       <video src="static/cora_teaser.mp4" poster="static/teaser_poster.jpg" autoplay muted loop playsinline controls preload="metadata" aria-label="Side-by-side answers of InternVL3-8B with all visual tokens and with CORA at 4.5 percent"></video>
-      <p class="figcap"><b>Scene captioning at a 4.5% layer-averaged visual-token budget.</b> InternVL3-8B answers <i>“Describe the scene in detail.”</i> for ScanNet scene0088_00 from 12 views, with all 3,072 visual tokens (left) and with CORA (right: 176 tokens in LLM layers 1–16, 88 in subsequent layers; orange and green markers indicate their spatial locations). Both responses are generated using greedy decoding. This free-form captioning example is separate from the benchmark evaluations. Time to first token is 624 ms for full-token inference and 198 ms for CORA; subsequent tokens are displayed at the measured decoding rate for each configuration. Playback is at half speed.</p>
+      <p class="figcap"><b>Scene captioning with CORA.</b> InternVL3-8B generates a description from 12 ScanNet views using full-token inference (left) and CORA at a 4.5% token budget (right). CORA reduces time to first token from 624 ms to 198 ms.</p>
     </div>
 
     <div class="stat-grid">
